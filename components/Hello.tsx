@@ -1,9 +1,7 @@
-import useHello from "../hooks/useHello";
-
 const Hello = ({name} : {name: string}) => {
-    const {getGreeting} = useHello(name);
 
-    return <div>{getGreeting()}</div>
+
+    return <div>{name}</div>
 }
 
 export default Hello;
