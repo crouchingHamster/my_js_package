@@ -1,7 +1,5 @@
-const Hello = ({name} : {name: string}) => {
-
-
-    return <div>{name}</div>
+const Hello = () => {
+    return <div>sofaking stupid</div>
 }
 
 export default Hello;
