@@ -1,13 +1,9 @@
-import {useState} from "react";
-
-const useHello = (): {setName: (value: (((prevState: string) => string) | string)) => void, getGreeting: () => string} => {
-    const [name, setName]  = useState('Unknown');
-
+const useHello = ({name}: {name: string}): {getGreeting: () => string} => {
     const getGreeting = () => {
         return `Hello ${name}`;
     }
 
-    return {setName, getGreeting}
+    return {getGreeting}
 }
 
 export default useHello;

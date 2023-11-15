@@ -1,8 +1,7 @@
 import useHello from "../hooks/useHello";
 
 const Hello = ({name} : {name: string}) => {
-    const {setName, getGreeting} = useHello();
-    setName(name);
+    const {getGreeting} = useHello(name);
 
     return <div>{getGreeting()}</div>
 }
